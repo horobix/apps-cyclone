@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./src/javascripts/dist/header.bundle.js" defer></script>
+    <script src="./src/javascripts/courses.js" type="module" defer></script>
+    <link rel="stylesheet" href="./src/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="./src/stylesheets/output/index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Apps Cyclone</title>
+  </head>
+  <body class="font-CentraNo2Medium text-ac-primary-text">
+    <!-- Start of Header -->
+    <header id="ac-page-header" class="z-[999998] fixed top-0 left-0 right-0">
+      <nav
+        class="relative flex items-center justify-between container mx-auto h-[72px] px-[20px]"
+      >
+        <a href="/index.html">
+          <img
+            class="w-[120px] md:w-[178px]"
+            src="./src/images/AC-Logo.svg"
+            alt="Apps Cyclone Logo"
+          />
+        </a>
+        <button id="ac-header-toggle-burger" class="lg:hidden" type="button">
+          <svg
+            class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px]"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask id="path-1-inside-1_6_516" fill="white">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.01611 8C4.01611 7.58579 4.3519 7.25 4.76611 7.25H19.2661C19.6803 7.25 20.0161 7.58579 20.0161 8C20.0161 8.41421 19.6803 8.75 19.2661 8.75H4.76611C4.3519 8.75 4.01611 8.41421 4.01611 8ZM4.01611 12C4.01611 11.5858 4.3519 11.25 4.76611 11.25H19.2661C19.6803 11.25 20.0161 11.5858 20.0161 12C20.0161 12.4142 19.6803 12.75 19.2661 12.75H4.76611C4.3519 12.75 4.01611 12.4142 4.01611 12ZM4.73389 15.25C4.31967 15.25 3.98389 15.5858 3.98389 16C3.98389 16.4142 4.31967 16.75 4.73389 16.75H19.2339C19.6481 16.75 19.9839 16.4142 19.9839 16C19.9839 15.5858 19.6481 15.25 19.2339 15.25H4.73389Z"
+              />
+            </mask>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.01611 8C4.01611 7.58579 4.3519 7.25 4.76611 7.25H19.2661C19.6803 7.25 20.0161 7.58579 20.0161 8C20.0161 8.41421 19.6803 8.75 19.2661 8.75H4.76611C4.3519 8.75 4.01611 8.41421 4.01611 8ZM4.01611 12C4.01611 11.5858 4.3519 11.25 4.76611 11.25H19.2661C19.6803 11.25 20.0161 11.5858 20.0161 12C20.0161 12.4142 19.6803 12.75 19.2661 12.75H4.76611C4.3519 12.75 4.01611 12.4142 4.01611 12ZM4.73389 15.25C4.31967 15.25 3.98389 15.5858 3.98389 16C3.98389 16.4142 4.31967 16.75 4.73389 16.75H19.2339C19.6481 16.75 19.9839 16.4142 19.9839 16C19.9839 15.5858 19.6481 15.25 19.2339 15.25H4.73389Z"
+              fill="#063A5A"
+            />
+            <path
+              d="M4.76611 6.25C3.79961 6.25 3.01611 7.0335 3.01611 8H5.01611C5.01611 8.13807 4.90418 8.25 4.76611 8.25V6.25ZM19.2661 6.25H4.76611V8.25H19.2661V6.25ZM21.0161 8C21.0161 7.0335 20.2326 6.25 19.2661 6.25V8.25C19.128 8.25 19.0161 8.13807 19.0161 8H21.0161ZM19.2661 9.75C20.2326 9.75 21.0161 8.9665 21.0161 8H19.0161C19.0161 7.86193 19.128 7.75 19.2661 7.75V9.75ZM4.76611 9.75H19.2661V7.75H4.76611V9.75ZM3.01611 8C3.01611 8.9665 3.79961 9.75 4.76611 9.75V7.75C4.90418 7.75 5.01611 7.86193 5.01611 8H3.01611ZM4.76611 10.25C3.79962 10.25 3.01611 11.0335 3.01611 12H5.01611C5.01611 12.1381 4.90418 12.25 4.76611 12.25V10.25ZM19.2661 10.25H4.76611V12.25H19.2661V10.25ZM21.0161 12C21.0161 11.0335 20.2326 10.25 19.2661 10.25V12.25C19.128 12.25 19.0161 12.1381 19.0161 12H21.0161ZM19.2661 13.75C20.2326 13.75 21.0161 12.9665 21.0161 12H19.0161C19.0161 11.8619 19.128 11.75 19.2661 11.75V13.75ZM4.76611 13.75H19.2661V11.75H4.76611V13.75ZM3.01611 12C3.01611 12.9665 3.79962 13.75 4.76611 13.75V11.75C4.90418 11.75 5.01611 11.8619 5.01611 12H3.01611ZM4.98389 16C4.98389 16.1381 4.87196 16.25 4.73389 16.25V14.25C3.76739 14.25 2.98389 15.0335 2.98389 16H4.98389ZM4.73389 15.75C4.87196 15.75 4.98389 15.8619 4.98389 16H2.98389C2.98389 16.9665 3.76739 17.75 4.73389 17.75V15.75ZM19.2339 15.75H4.73389V17.75H19.2339V15.75ZM18.9839 16C18.9839 15.8619 19.0958 15.75 19.2339 15.75V17.75C20.2004 17.75 20.9839 16.9665 20.9839 16H18.9839ZM19.2339 16.25C19.0958 16.25 18.9839 16.1381 18.9839 16H20.9839C20.9839 15.0335 20.2004 14.25 19.2339 14.25V16.25ZM4.73389 16.25H19.2339V14.25H4.73389V16.25Z"
+              fill="#063A5A"
+              mask="url(#path-1-inside-1_6_516)"
+            />
+          </svg>
+        </button>
+        <ul
+          id="ac-header-toggle-menu"
+          class="hidden z-[999999] lg:z-auto fixed top-0 left-0 right-0 w-screen h-screen lg:w-auto lg:h-auto bg-ac-primary-1 lg:static lg:top-[unset] lg:left-[unset] lg:right-[unset] lg:bg-transparent lg:flex flex-col lg:flex-row items-center justify-center lg:justify-end gap-[48px]"
+        >
+          <li class="">
+            <a
+              class="text-white lg:text-ac-primary-text hover:text-ac-primary-1 transition-colors ease-in-out duration-300"
+              href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="">
+            <a
+              class="text-white lg:text-ac-primary-text hover:text-ac-primary-1 transition-colors ease-in-out duration-300"
+              href="/courses.html"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-[24px] py-[12px] rounded-full text-white bg-ac-primary-text transition-colors ease-in-out duration-300 hover:bg-ac-primary-1"
+              href="/register.html"
+            >
+              Registered
+            </a>
+          </li>
+          <li
+            id="ac-header-toggle-close"
+            class="lg:hidden font-CentraNo2Light text-ac-gray-2 cursor-pointer"
+          >
+            Close
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Start of Content -->
+    <section class="mt-[112px]">
+      <div class="container mx-auto px-[30px] md:p-[30px]">
+        <div class="flex flex-col">
+          <h3 class="text-4xl">All Courses</h3>
+          <ul
+            class="overflow-x-scroll lg:overflow-auto flex w-full lg:w-auto mt-[40px]"
+          >
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-white hover:text-white bg-ac-gray-22 hover:bg-ac-gray-22 cursor-pointer"
+              course="all"
+            >
+              <p>All</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="frontend"
+            >
+              <p>Frontend</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="design"
+            >
+              <p>Design</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="backend"
+            >
+              <p>Backend</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="mobile"
+            >
+              <p>Mobile</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="qc"
+            >
+              <p>QC</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="game"
+            >
+              <p>Game</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="blockchain"
+            >
+              <p>Blockchain</p>
+            </li>
+            <li
+              class="course-selector w-[140px] h-[44px] px-[16px] py-[10px] text-center text-ac-gray-22 bg-ac-gray-1 hover:text-white hover:bg-ac-gray-22 cursor-pointer"
+              course="iot"
+            >
+              <p>IOT</p>
+            </li>
+          </ul>
+        </div>
+        <div class="mt-[24px]">
+          <div
+            id="course-cards"
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px]"
+          >
+            <div
+              class="loader-container col-span-3 flex items-center justify-center py-20"
+            >
+              <div class="loader"></div>
+            </div>
+          </div>
+          <div id="pagination" class="hidden mt-[40px] mb-[120px]">
+            <div
+              class="flex flex-col md:flex-row items-center justify-end gap-[16px]"
+            >
+              <p id="total-items" class="font-CentraNo2Light">Total 50 items</p>
+              <ul class="flex gap-[8px]">
+                <li>
+                  <a
+                    class="flex items-center justify-center w-[40px] h-[40px] bg-ac-gray-1 hover:text-white transition-all"
+                    href="#"
+                    ><svg
+                      width="6"
+                      height="10"
+                      viewBox="0 0 6 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M5 1L1 5L5 9"
+                        stroke="#BCBCC8"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="flex items-center justify-center w-[40px] h-[40px] bg-ac-gray-1 hover:text-white hover:bg-ac-primary-1 transition-all"
+                    href="#"
+                    >1</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="flex items-center justify-center w-[40px] h-[40px] bg-ac-gray-1 hover:text-white hover:bg-ac-primary-1"
+                    href="#"
+                    >2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="flex items-center justify-center w-[40px] h-[40px] bg-ac-gray-1 hover:text-white hover:bg-ac-primary-1 transition-all"
+                    href="#"
+                    >3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="flex items-center justify-center w-[40px] h-[40px] bg-ac-gray-1 hover:text-white hover:bg-ac-primary-1 transition-all"
+                    href="#"
+                    >...</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="flex items-center justify-center w-[40px] h-[40px] bg-ac-gray-1 hover:text-white hover:bg-ac-primary-1 transition-all"
+                    href="#"
+                    >6</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="pagination flex items-center justify-center w-[40px] h-[40px] bg-ac-gray-1 hover:text-white hover:bg-ac-primary-1 transition-all"
+                    href="#"
+                    ><svg
+                      width="6"
+                      height="10"
+                      viewBox="0 0 6 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 9L5 5L0.999999 1"
+                        stroke="#0D0F35"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Enf of Content -->
+
+    <!-- Start of Footer -->
+    <footer class="container h-[534px] mx-auto bg-white px-[20px]">
+      <div
+        class="flex flex-col items-center lg:flex-row lg:justify-between pt-[96px] pb-[32px]"
+      >
+        <div class="flex flex-col gap-[156px]">
+          <div class="flex flex-col gap-[32px] items-center lg:items-start">
+            <div>
+              <a href="/index.html">
+                <img
+                  class="w-[178px]"
+                  src="./src/images/AC-Logo.svg"
+                  alt="Apps Cyclone Logo"
+                />
+              </a>
+            </div>
+            <h4 class="text-3xl text-center lg:text-left">
+              Wanna learn with us?<br />Get in touch
+            </h4>
+            <a
+              class="flex items-center justify-center w-[200px] h-[56px] px-[24px] py-[12px] rounded-full text-white bg-ac-primary-text transition-colors ease-in-out duration-300 hover:bg-ac-primary-1"
+              type="button"
+              href="/register.html"
+            >
+              Registered
+            </a>
+          </div>
+          <p
+            class="hidden lg:block text-center lg:text-left text-ac-secondary-text font-CentraNo2Light"
+          >
+            Copyright © 2023. All rights reserved.
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-[40px] mt-[40px]">
+          <div class="w-[251px]">
+            <p class="text-[18px] text-center lg:text-left">Navigation</p>
+            <ul
+              class="flex flex-col gap-[16px] mt-[16px] text-center lg:text-left"
+            >
+              <li>
+                <a
+                  class="text-ac-secondary-text mt-[16px] font-CentraNo2Book"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-ac-secondary-text mt-[16px] font-CentraNo2Book"
+                  href="/courses.html"
+                  >Course</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-[251px]">
+            <p class="text-[18px] text-center lg:text-left">Head Office</p>
+            <p
+              class="text-ac-secondary-text mt-[16px] font-CentraNo2Book text-center lg:text-left"
+            >
+              168/6 Bui Thi Xuan Street,<br />Ward 3, Tan Binh District,<br />Ho
+              Chi Minh City, Vietnam
+            </p>
+            <ul
+              class="flex justify-center lg:justify-start gap-[28px] mt-[22px]"
+            >
+              <li>
+                <a href="#"
+                  ><svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_1893)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M26.1 12.4668C26.1 20.8668 21.3 26.8668 12.9 26.8668C8.1 26.8668 6.176 24.3615 4.5 22.0668M4.5 22.0668C4.53867 22.0601 8.1 20.8668 8.1 20.8668C4.092 16.8148 3.788 10.8135 6.9 6.4668C8.376 9.21213 11.132 11.7455 14.1 12.4668C14.2147 9.00013 16.5653 6.4668 20.1 6.4668C22.5067 6.4668 23.9227 7.38413 24.9 8.8668H28.5L26.1 12.4668"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_1893">
+                        <rect
+                          width="32"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_1894)">
+                      <path
+                        d="M24.772 7.68245C23.6948 6.59891 22.4134 5.73979 21.002 5.1548C19.5906 4.56982 18.0772 4.2706 16.5493 4.27445C10.14 4.27445 4.92532 9.48645 4.92398 15.8931C4.9213 17.9322 5.45616 19.936 6.47465 21.7025L4.82532 27.7238L10.988 26.1078C12.6928 27.0359 14.6029 27.5222 16.544 27.5225H16.5493C22.956 27.5225 28.1707 22.3091 28.1733 15.9025C28.1779 14.3755 27.8797 12.8628 27.2958 11.4518C26.712 10.0409 25.8542 8.75971 24.772 7.68245Z"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.96 18.0799L18.5014 17.5425C18.9987 17.0492 19.7854 16.9865 20.3587 17.3892C20.9134 17.7785 21.4147 18.1279 21.8814 18.4532C22.6227 18.9679 22.712 20.0239 22.0734 20.6612L21.5947 21.1399"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.36 10.9053L11.8387 10.4267C11.9878 10.2768 12.1679 10.1615 12.3665 10.0889C12.565 10.0162 12.777 9.98809 12.9876 10.0064C13.1982 10.0247 13.4022 10.089 13.5852 10.1948C13.7682 10.3006 13.9258 10.4453 14.0467 10.6187C14.3707 11.0853 14.72 11.5867 15.1107 12.1413C15.3069 12.4198 15.399 12.7583 15.3709 13.0978C15.3429 13.4373 15.1965 13.7561 14.9574 13.9987L14.42 14.54"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.5947 21.1398C19.62 23.1051 16.3013 21.4358 13.6813 18.8145"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.684 18.8186C11.064 16.1973 9.39469 12.8799 11.36 10.9053"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.42 14.54C14.8766 15.2459 15.4086 15.9 16.0067 16.4907L16.0094 16.4934C16.6254 17.1094 17.2894 17.6547 17.96 18.08"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_1894">
+                        <rect
+                          width="32"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_1895)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.5 4H22.5053C23.2926 4 24.0721 4.15506 24.7994 4.45632C25.5267 4.75758 26.1875 5.19914 26.7442 5.7558C27.3009 6.31245 27.7424 6.9733 28.0437 7.70061C28.3449 8.42791 28.5 9.20744 28.5 9.99467V22.0067C28.4996 23.5963 27.8679 25.1207 26.7437 26.2447C25.6196 27.3686 24.095 28 22.5053 28H10.4947C8.90478 28 7.38002 27.3684 6.2558 26.2442C5.13158 25.12 4.5 23.5952 4.5 22.0053V10C4.5 8.4087 5.13214 6.88258 6.25736 5.75736C7.38258 4.63214 8.9087 4 10.5 4Z"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.3 17.2002H22.5"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22.5 11.2002H21.24C20.3011 11.2002 19.4007 11.5732 18.7368 12.237C18.0729 12.9009 17.7 13.8013 17.7 14.7402V28.0002"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_1895">
+                        <rect
+                          width="32"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p
+          class="lg:hidden mt-[40px] text-ac-secondary-text font-CentraNo2Light"
+        >
+          Copyright © 2023. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>

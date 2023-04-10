@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.no-scroll {
+  overflow-y: hidden !important;
+}
+
+.scale-down-center {
+  animation: scale-down-center 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes scale-down-center {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.ac-header-bg {
+  -webkit-backdrop-filter: blur(14px);
+
+  backdrop-filter: blur(14px);
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.courses-slide {
+  @apply lg:absolute lg:top-0 lg:bottom-0  flex flex-col lg:flex-row lg:items-center my-auto bg-center bg-no-repeat bg-cover;
+}
+
+.offline-course-tag {
+  @apply relative  before:absolute before:top-[20px] before:right-[20px] lg:before:top-[40px] lg:before:right-[40px] before:w-[77px] before:h-[40px] before:px-4 before:py-2 before:bg-ac-primary-1 before:content-['Offline'] before:text-center before:font-CentraNo2Light before:text-white;
+}
+
+.online-course-tag {
+  @apply relative  before:absolute before:top-[20px] before:right-[20px] lg:before:top-[40px] lg:before:right-[40px] before:w-[77px] before:h-[40px] before:px-4 before:py-2 before:bg-ac-primary-1 before:content-['Online'] before:text-center before:font-CentraNo2Light before:text-white;
+}
+
+.teacher-course-tag {
+  @apply relative  before:absolute before:top-[20px] before:right-[5px] lg:before:top-[10px] lg:before:right-[10px] before:w-[110px] before:h-[40px] before:px-4 before:py-2 before:bg-ac-primary-1 before:content-['Teacher'] before:text-center before:font-CentraNo2Light before:text-white;
+}
+
+.mentor-course-tag {
+  @apply relative  before:absolute before:top-[20px] before:right-[5px] lg:before:top-[10px] lg:before:right-[10px] before:w-[110px] before:h-[40px] before:px-4 before:py-2 before:bg-ac-gray-3 before:content-['Mentor'] before:text-center before:font-CentraNo2Light before:text-black;
+}
+
+.view-all-btn:hover svg {
+  @aplly transition-colors ease-in-out duration-300;
+  fill: rgb(255, 255, 255) !important;
+}
+
+.pagination:hover > svg > path {
+  stroke: white;
+}
+
+.loader {
+  border: 3px solid rgb(215, 215, 220);
+  border-top-color: rgb(0, 168, 164);
+  border-radius: 50%;
+  width: 3em;
+  height: 3em;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}

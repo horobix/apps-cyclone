@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./src/javascripts/dist/lecturers.bundle.js" defer></script>
+    <script src="./src/javascripts/dist/header.bundle.js" defer></script>
+    <script src="./src/javascripts/accordions.js" defer></script>
+    <link rel="stylesheet" href="./src/stylesheets/fonts.css" />
+    <link rel="stylesheet" href="./src/stylesheets/output/index.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
+    <title>Apps Cyclone</title>
+  </head>
+  <body class="font-CentraNo2Medium text-ac-primary-text">
+    <!-- Start of Header -->
+    <header id="ac-page-header" class="z-[999998] fixed top-0 left-0 right-0">
+      <nav
+        class="relative flex items-center justify-between container mx-auto h-[72px] px-[20px]"
+      >
+        <a href="/index.html">
+          <img
+            class="w-[120px] md:w-[178px]"
+            src="./src/images/AC-Logo.svg"
+            alt="Apps Cyclone Logo"
+          />
+        </a>
+        <button id="ac-header-toggle-burger" class="lg:hidden" type="button">
+          <svg
+            class="w-[30px] h-[30px] md:w-[40px] md:h-[40px] lg:w-[50px] lg:h-[50px]"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask id="path-1-inside-1_6_516" fill="white">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.01611 8C4.01611 7.58579 4.3519 7.25 4.76611 7.25H19.2661C19.6803 7.25 20.0161 7.58579 20.0161 8C20.0161 8.41421 19.6803 8.75 19.2661 8.75H4.76611C4.3519 8.75 4.01611 8.41421 4.01611 8ZM4.01611 12C4.01611 11.5858 4.3519 11.25 4.76611 11.25H19.2661C19.6803 11.25 20.0161 11.5858 20.0161 12C20.0161 12.4142 19.6803 12.75 19.2661 12.75H4.76611C4.3519 12.75 4.01611 12.4142 4.01611 12ZM4.73389 15.25C4.31967 15.25 3.98389 15.5858 3.98389 16C3.98389 16.4142 4.31967 16.75 4.73389 16.75H19.2339C19.6481 16.75 19.9839 16.4142 19.9839 16C19.9839 15.5858 19.6481 15.25 19.2339 15.25H4.73389Z"
+              />
+            </mask>
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M4.01611 8C4.01611 7.58579 4.3519 7.25 4.76611 7.25H19.2661C19.6803 7.25 20.0161 7.58579 20.0161 8C20.0161 8.41421 19.6803 8.75 19.2661 8.75H4.76611C4.3519 8.75 4.01611 8.41421 4.01611 8ZM4.01611 12C4.01611 11.5858 4.3519 11.25 4.76611 11.25H19.2661C19.6803 11.25 20.0161 11.5858 20.0161 12C20.0161 12.4142 19.6803 12.75 19.2661 12.75H4.76611C4.3519 12.75 4.01611 12.4142 4.01611 12ZM4.73389 15.25C4.31967 15.25 3.98389 15.5858 3.98389 16C3.98389 16.4142 4.31967 16.75 4.73389 16.75H19.2339C19.6481 16.75 19.9839 16.4142 19.9839 16C19.9839 15.5858 19.6481 15.25 19.2339 15.25H4.73389Z"
+              fill="#063A5A"
+            />
+            <path
+              d="M4.76611 6.25C3.79961 6.25 3.01611 7.0335 3.01611 8H5.01611C5.01611 8.13807 4.90418 8.25 4.76611 8.25V6.25ZM19.2661 6.25H4.76611V8.25H19.2661V6.25ZM21.0161 8C21.0161 7.0335 20.2326 6.25 19.2661 6.25V8.25C19.128 8.25 19.0161 8.13807 19.0161 8H21.0161ZM19.2661 9.75C20.2326 9.75 21.0161 8.9665 21.0161 8H19.0161C19.0161 7.86193 19.128 7.75 19.2661 7.75V9.75ZM4.76611 9.75H19.2661V7.75H4.76611V9.75ZM3.01611 8C3.01611 8.9665 3.79961 9.75 4.76611 9.75V7.75C4.90418 7.75 5.01611 7.86193 5.01611 8H3.01611ZM4.76611 10.25C3.79962 10.25 3.01611 11.0335 3.01611 12H5.01611C5.01611 12.1381 4.90418 12.25 4.76611 12.25V10.25ZM19.2661 10.25H4.76611V12.25H19.2661V10.25ZM21.0161 12C21.0161 11.0335 20.2326 10.25 19.2661 10.25V12.25C19.128 12.25 19.0161 12.1381 19.0161 12H21.0161ZM19.2661 13.75C20.2326 13.75 21.0161 12.9665 21.0161 12H19.0161C19.0161 11.8619 19.128 11.75 19.2661 11.75V13.75ZM4.76611 13.75H19.2661V11.75H4.76611V13.75ZM3.01611 12C3.01611 12.9665 3.79962 13.75 4.76611 13.75V11.75C4.90418 11.75 5.01611 11.8619 5.01611 12H3.01611ZM4.98389 16C4.98389 16.1381 4.87196 16.25 4.73389 16.25V14.25C3.76739 14.25 2.98389 15.0335 2.98389 16H4.98389ZM4.73389 15.75C4.87196 15.75 4.98389 15.8619 4.98389 16H2.98389C2.98389 16.9665 3.76739 17.75 4.73389 17.75V15.75ZM19.2339 15.75H4.73389V17.75H19.2339V15.75ZM18.9839 16C18.9839 15.8619 19.0958 15.75 19.2339 15.75V17.75C20.2004 17.75 20.9839 16.9665 20.9839 16H18.9839ZM19.2339 16.25C19.0958 16.25 18.9839 16.1381 18.9839 16H20.9839C20.9839 15.0335 20.2004 14.25 19.2339 14.25V16.25ZM4.73389 16.25H19.2339V14.25H4.73389V16.25Z"
+              fill="#063A5A"
+              mask="url(#path-1-inside-1_6_516)"
+            />
+          </svg>
+        </button>
+        <ul
+          id="ac-header-toggle-menu"
+          class="hidden z-[999999] lg:z-auto fixed top-0 left-0 right-0 w-screen h-screen lg:w-auto lg:h-auto bg-ac-primary-1 lg:static lg:top-[unset] lg:left-[unset] lg:right-[unset] lg:bg-transparent lg:flex flex-col lg:flex-row items-center justify-center lg:justify-end gap-[48px]"
+        >
+          <li class="">
+            <a
+              class="text-white lg:text-ac-primary-text hover:text-ac-primary-1 transition-colors ease-in-out duration-300"
+              href="/index.html"
+              >Home</a
+            >
+          </li>
+          <li class="">
+            <a
+              class="text-white lg:text-ac-primary-text hover:text-ac-primary-1 transition-colors ease-in-out duration-300"
+              href="/courses.html"
+              >Courses</a
+            >
+          </li>
+          <li>
+            <a
+              class="px-[24px] py-[12px] rounded-full text-white bg-ac-primary-text transition-colors ease-in-out duration-300 hover:bg-ac-primary-1"
+              href="/register.html"
+            >
+              Registered
+            </a>
+          </li>
+          <li
+            id="ac-header-toggle-close"
+            class="lg:hidden font-CentraNo2Light text-ac-gray-2 cursor-pointer"
+          >
+            Close
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- End of Header -->
+
+    <!-- Start of Content -->
+    <section class="mt-[112px] mb-[120px]">
+      <div
+        class="lg:h-[655px] p-[30px] lg:p-[56px] container mx-auto bg-ac-gray-1 px-[30px]"
+      >
+        <div
+          class="flex flex-col-reverse gap-[80px] items-center lg:flex-row justify-between"
+        >
+          <div class="flex flex-col items-start justify-center gap-[40px] w-full lg:w-auto">
+            <div class="flex flex-col gap-[16px]">
+              <p class="uppercase font-CentraNo2Light text-ac-gray-12">
+                FrontEnd
+              </p>
+              <h2 class="text-3xl lg:text-6xl">ReactJS</h2>
+            </div>
+            <ul class="flex flex-col lg:flex-row gap-[40px]">
+              <li>
+                <p class="pb-[16px] font-CentraNo2Light text-ac-gray-12">
+                  Opening day
+                </p>
+                <h5 class="text-lg lg:text-xl">28/02/2023</h5>
+              </li>
+              <li>
+                <p class="pb-[16px] font-CentraNo2Light text-ac-gray-12">
+                  Time limit
+                </p>
+                <h5 class="text-lg lg:text-xl">45 spells</h5>
+              </li>
+              <li>
+                <p class="pb-[16px] font-CentraNo2Light text-ac-gray-12">
+                  Learning form
+                </p>
+                <h5 class="text-lg lg:text-xl">Offline</h5>
+              </li>
+            </ul>
+            <div
+              class="flex flex-col lg:flex-row items-center justify-between w-full p-[24px] bg-white"
+            >
+              <div class="flex items-center">
+                <img
+                  class="mr-[8px]"
+                  src="./src/images/courses/teacher.svg"
+                  alt="Course Teacher"
+                />
+                <p class="text-ac-gray-12 font-CentraNo2Light">Jane Cooper</p>
+              </div>
+              <h6 class="mt-[20px] lg:mt-0 text-xl">14.500.000 VND</h6>
+            </div>
+            <button
+              class="w-full lg:w-auto px-[40px] py-[16px] rounded-full text-white bg-ac-primary-text transition-colors ease-in-out duration-300 hover:bg-ac-primary-1"
+              type="button"
+            >
+              Registered
+            </button>
+          </div>
+          <div
+            class="flex items-center lg:w-[543px] lg:h-[543px] mb-[40px] lg:mb-0"
+          >
+            <img
+              class="w-full"
+              src="./src/images/courses/react-course.svg"
+              alt="Course Name"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="grid grid-cols-1 md:grid-cols-2 gap-[40px] container mx-auto mt-[64px] px-[30px]"
+      >
+        <div>
+          <h3 class="text-2xl md:text-3xl lg:text-4xl">Introduce</h3>
+          <p
+            class="mt-[16px] text-sm md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text"
+          >
+            This FRONTEND MASTER PROGRAMMING course is suitable for those of you
+            who are IT students or those who want to become a comprehensive
+            Front-end Dev to work in companies. After the course, you will have
+            completed 5 projects like working and have full knowledge from basic
+            to advanced of a Front-end Dev. In addition to the knowledge, you
+            will accumulate a lot of experience in the process of studying and
+            doing projects to easily apply successfully. After the course, you
+            will have completed 5 projects like working and have full knowledge
+            from basic to advanced of a Front-end Dev.
+          </p>
+        </div>
+        <div class="flex items-center justify-center h-[372px] bg-ac-gray-3">
+          <img src="./src/images/icons/play-button.svg" alt="Play Button" />
+        </div>
+        <div
+          class="flex items-center justify-center h-[372px] mb-[40px] bg-ac-gray-3"
+        >
+          <img src="./src/images/icons/play-button.svg" alt="Play Button" />
+        </div>
+        <div>
+          <p class="mb-[28px] font-CentraNo2Light text-ac-gray-12">
+            The Frontend Master course is divided into 3 main phases:
+          </p>
+          <p class="mb-[28px] font-CentraNo2Light text-ac-gray-12">
+            - <strong class="font-CentraNo2Medium">Frontend Newbie</strong>: 6
+            week duration (2 sessions/week). Class time 18h45 - 21h45 Tuesday
+            and Saturday
+          </p>
+          <p class="mb-[28px] font-CentraNo2Light text-ac-gray-12">
+            - <strong class="font-CentraNo2Medium">Web Responsive</strong>:
+            Duration 5 weeks (3 sessions/week). Study time 18h45 - 21h45 on
+            Mondays, Wednesdays and Fridays
+          </p>
+          <p class="mb-[28px] font-CentraNo2Light text-ac-gray-12">
+            - <strong class="font-CentraNo2Medium">ReactJs Master</strong>: 6
+            weeks duration (3 sessions/week). Study time 18h45 - 21h45 on
+            Mondays, Wednesdays and Fridays
+          </p>
+          <p class="mb-[28px] font-CentraNo2Light text-ac-gray-12">
+            <strong class="font-CentraNo2Medium">FORM</strong>: OFFLINE OR
+            ONLINE GOOGLE MEET WITH OFFLINE CLASS
+          </p>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-[64px] px-[30px]">
+        <h3 class="text-2xl md:text-3xl lg:text-4xl">Schedule</h3>
+        <div class="grid grid-cols-1 lg:grid-cols-2 mt-[40px]">
+          <div>
+            <div class="flex flex-col lg:flex-row">
+              <div
+                class="lg:w-[50%] h-[156px] p-[40px] border border-ac-gray-4"
+              >
+                <p class="mb-[16px] font-CentraNo2Light text-ac-secondary-text">
+                  Opening day
+                </p>
+                <h5 class="text-xl">28/02/2023</h5>
+              </div>
+              <div
+                class="lg:w-[50%] h-[156px] p-[40px] border border-ac-gray-4"
+              >
+                <p class="mb-[16px] font-CentraNo2Light text-ac-secondary-text">
+                  Time
+                </p>
+                <h5 class="text-xl">18:45 - 21:45</h5>
+              </div>
+            </div>
+            <div class="w-[100%] h-[232px] p-[40px] border border-ac-gray-4">
+              <p class="mb-[16px] font-CentraNo2Light text-ac-secondary-text">
+                Address
+              </p>
+              <h5 class="text-xl">
+                168/6 Bui Thi Xuan Street, Ward 3, Tan Binh District, Ho Chi
+                Minh City, Vietnam
+              </h5>
+            </div>
+          </div>
+          <div class="self-stretch">
+            <div class="h-full p-[40px] border border-ac-gray-4">
+              <p class="mb-[16px] font-CentraNo2Light text-ac-secondary-text">
+                Address
+              </p>
+              <h5 class="text-xl">
+                168/6 Bui Thi Xuan Street, Ward 3, Tan Binh District, Ho Chi
+                Minh City, Vietnam
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-[64px] px-[30px]">
+        <h3 class="text-2xl md:text-3xl lg:text-4xl">Content</h3>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-[40px] mt-[40px]">
+          <div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Overview, HTML, Photoshop, Chrome Dev Tool
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  CSS/CSS3
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Basic Javascript
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Luxestate project report and evaluation
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Advanced HTML. The BEM . Rule
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Redux and the libraries that come with redux
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Optimization, other hooks, build and deploy the project
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Practice the final project of the Shopping Cart course
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Project reporting and evaluation
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+            <div
+              class="accordions px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+            >
+              <div class="flex items-center justify-between">
+                <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                  Summarize and share experiences in making CVs
+                </p>
+                <svg
+                  class="arrow-down"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <svg
+                  class="arrow-up hidden"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                  ></path>
+                </svg>
+              </div>
+              <div
+                class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+              >
+                <ul class="list-disc ml-[20px]">
+                  <li>HTML knowledge. Write SEO-standard HTML</li>
+                  <li>Photoshop</li>
+                  <li>Chrome Dev Tools</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="flex flex-col items-center container mx-auto mt-[64px] px-[30px] lg:px-0"
+      >
+        <h3 class="text-2xl md:text-3xl lg:text-4xl">Required requirements</h3>
+        <div class="lg:w-[580px] mt-[40px]">
+          <div class="flex items-start mb-[32px]">
+            <img
+              class="mr-[24px]"
+              src="./src/images/icons/checked.svg"
+              alt="Checked"
+            />
+            <p class="text-[18px] font-CentraNo2Light text-ac-secondary-text">
+              Have a personal laptop, install Photoshop, VSCode software
+            </p>
+          </div>
+          <div class="flex items-start mb-[32px]">
+            <img
+              class="mr-[24px]"
+              src="./src/images/icons/checked.svg"
+              alt="Checked"
+            />
+            <p class="text-[18px] font-CentraNo2Light text-ac-secondary-text">
+              Minimize school breaks and complete assigned assignments
+            </p>
+          </div>
+          <div class="flex items-start mb-[32px]">
+            <img
+              class="mr-[24px]"
+              src="./src/images/icons/checked.svg"
+              alt="Checked"
+            />
+            <p class="text-[18px] font-CentraNo2Light text-ac-secondary-text">
+              Learned about the frontend learning route and basic knowledge of
+              HTML and CSS is an advantage
+            </p>
+          </div>
+          <div class="flex items-start mb-[32px]">
+            <img
+              class="mr-[24px]"
+              src="./src/images/icons/checked.svg"
+              alt="Checked"
+            />
+            <p class="text-[18px] font-CentraNo2Light text-ac-secondary-text">
+              Appscyclone members must have a high sense of responsibility and
+              initiative in learning, as well as self-study and part-time work
+              at home
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mx-auto mt-[64px] px-[30px]">
+        <h3 class="text-2xl md:text-2xl lg:text-3xl">Lecturers</h3>
+        <div class="mt-[40px]">
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="teacher-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-1.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign
+                        customers.
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-2.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        I always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign
+                        customers.
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-3.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products.
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-4.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign
+                        customers,
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-1.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign customers
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-1.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign
+                        customers.
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-2.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        I always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign
+                        customers.
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-3.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products.
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-4.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign
+                        customers,
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="mentor-course-tag">
+                  <img
+                    class="w-full"
+                    src="./src/images/lecturers/lecturer-1.png"
+                    alt="Lecturers"
+                  />
+                  <div class="mt-[16px]">
+                    <div class="flex flex-col gap-[4px]">
+                      <p class="font-CentraNo2Light text-ac-gray-12">
+                        CEO & FOUNDER
+                      </p>
+                      <h5 class="text-2xl">Jenny Wilson</h5>
+                    </div>
+                    <div class="mt-[16px]">
+                      <p class="mb-[16px] font-CentraNo2Light text-ac-gray-12">
+                        For more than 7 years of experience in the profession, I
+                        always create high quality, innovative, sophisticated
+                        and suitable products for domestic and foreign customers
+                      </p>
+                      <a
+                        class="underline font-CentraNo2Light text-ac-gray-12"
+                        href="#"
+                        >https://jancooper.info</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hidden lg:flex items-center justify-end container mt-[40px]"
+        >
+          <div class="flex gap-[16px]">
+            <button
+              id="prev-button"
+              class="flex items-center justify-center w-[56px] h-[56px] border rounded-full border-black"
+              type="button"
+              title="Control button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgb(0, 0, 0)"
+              >
+                <path
+                  d="M12.707 17.293 8.414 13H18v-2H8.414l4.293-4.293-1.414-1.414L4.586 12l6.707 6.707z"
+                ></path>
+              </svg>
+            </button>
+            <button
+              id="next-button"
+              class="flex items-center justify-center w-[56px] h-[56px] border rounded-full border-black"
+              type="button"
+              title="Control button"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1)"
+              >
+                <path
+                  d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <section
+        class="relative overflow-hidden mt-[140px] lg:h-[896px] bg-ac-gray-1"
+      >
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 container mx-auto px-[30px] py-[50px] lg:py-[140px]"
+        >
+          <div class="mb-10 lg:mb-0">
+            <h3 class="leading-10 lg:leading-[56px] text-2xl lg:text-4xl">
+              <span class="text-ac-primary-1">Special Value</span><br />from
+              Appscyclone
+            </h3>
+          </div>
+          <div>
+            <div class="mb-[40px]">
+              <h4 class="text-xl lg:text-xl">Real-life training program</h4>
+              <p
+                class="mt-[16px] text-md lg:text-[18px] font-CentraNo2Light text-ac-secondary-text"
+              >
+                Instructors, mentors and students are a cohesive team, together
+                supporting, connecting and helping each other throughout the
+                learning and career development process.
+              </p>
+            </div>
+            <div class="mb-[40px]">
+              <h4 class="text-xl lg:text-xl">Companion and support 24/7</h4>
+              <p
+                class="mt-[16px] text-md lg:text-[18px] font-CentraNo2Light text-ac-secondary-text"
+              >
+                Instructors, mentors and students are a cohesive team, together
+                supporting, connecting and helping each other throughout the
+                learning and career development process.
+              </p>
+            </div>
+            <div class="mb-[40px]">
+              <h4 class="text-xl lg:text-xl">
+                Put the word "Mind" in everything
+              </h4>
+              <p
+                class="mt-[16px] text-md lg:text-[18px] font-CentraNo2Light text-ac-secondary-text"
+              >
+                The mind of the teacher, together with the enthusiasm of the
+                learners, will be successful on the career path of each of us.
+              </p>
+            </div>
+            <div class="mb-[40px]">
+              <h4 class="text-xl lg:text-xl">Various forms of learning</h4>
+              <p
+                class="mt-[16px] text-md lg:text-[18px] font-CentraNo2Light text-ac-secondary-text"
+              >
+                Study offline or online with offline through google meet, as
+                well as live &amp; video courses with instructors, and
+                mentor-supported video lessons.
+              </p>
+            </div>
+          </div>
+        </div>
+        <img
+          class="z-0 absolute top-[300px] left-[-100px] w-[300px] lg:w-[700px]"
+          src="./src/images/index/special-value/graphic.svg"
+          alt="Special Value"
+        />
+      </section>
+
+      <section class="relative overflow-hidden mt-[140px]">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col lg:flex-row lg:justify-between px-[30px] py-[50px]"
+          >
+            <h3 class="mb-10 lg:mb-0 text-2xl lg:text-4xl">
+              Frequently<br />Asked Questions
+            </h3>
+            <div>
+              <div
+                class="accordions lg:w-[777px] px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+              >
+                <div class="flex items-center justify-between">
+                  <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                    Can I get a job or internship after studying at Appscyclone?
+                  </p>
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="arrow-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                    ></path>
+                  </svg>
+                </div>
+                <p
+                  class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+                >
+                  The practical course at Appscyclone helps students experience
+                  the projects, working processes and practical skills required
+                  to not only apply for an internship, but also apply for higher
+                  official positions such as in companies.
+                </p>
+              </div>
+              <div
+                class="accordions lg:w-[777px] px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+              >
+                <div class="flex items-center justify-between">
+                  <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                    What should I do if I want to ask a question to the teacher?
+                  </p>
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="arrow-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                    ></path>
+                  </svg>
+                </div>
+                <p
+                  class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam uto lectus molestie malesuada vitae vel purus.
+                </p>
+              </div>
+              <div
+                class="accordions lg:w-[777px] px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+              >
+                <div class="flex items-center justify-between">
+                  <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                    How to study at Appscyclone most effectively?
+                  </p>
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="arrow-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                    ></path>
+                  </svg>
+                </div>
+                <p
+                  class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam uto lectus molestie malesuada vitae vel purus.
+                </p>
+              </div>
+              <div
+                class="accordions lg:w-[777px] px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+              >
+                <div class="flex items-center justify-between">
+                  <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                    Do you record a video after each lesson to review?
+                  </p>
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="arrow-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                    ></path>
+                  </svg>
+                </div>
+                <p
+                  class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam uto lectus molestie malesuada vitae vel purus.
+                </p>
+              </div>
+              <div
+                class="accordions lg:w-[777px] px-[40px] py-[32px] border-b cursor-pointer hover:bg-ac-gray-1"
+              >
+                <div class="flex items-center justify-between">
+                  <p class="text-[14px] md:text-[16px] lg:text-[18px]">
+                    Do you record a video after each lesson to review?
+                  </p>
+                  <svg
+                    class="arrow-down"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                    ></path>
+                  </svg>
+                  <svg
+                    class="arrow-up hidden"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    style="fill: rgba(0, 0, 0, 1)"
+                  >
+                    <path
+                      d="m6.293 13.293 1.414 1.414L12 10.414l4.293 4.293 1.414-1.414L12 7.586z"
+                    ></path>
+                  </svg>
+                </div>
+                <p
+                  class="content hidden mt-[22px] text-[14px] md:text-[16px] lg:text-[18px] font-CentraNo2Light text-ac-secondary-text transition-all"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Nullam uto lectus molestie malesuada vitae vel purus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="container mx-auto mt-[64px] px-[30px] lg:px-0">
+          <h3 class="text-2xl md:text-3xl lg:text-4xl">Recommended Courses</h3>
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[40px] mt-[40px]"
+          >
+            <div
+              class="card offline-course-tag scale-down-center"
+              course="react"
+              course-type="frontend"
+            >
+              <img
+                class="w-full"
+                src="./src/images/courses/react-course.svg"
+                alt="React Course"
+              />
+              <div
+                class="pt-[40px] pb-[20px] p-[20px] lg:p-[40px] bg-ac-gray-1"
+              >
+                <div>
+                  <p class="uppercase text-ac-gray-12 font-CentraNo2Light">
+                    Frontend
+                  </p>
+                  <a class="mt-[4px] text-2xl" href="/course-detail.html"
+                    >ReactJS</a
+                  >
+                  <div class="flex items-center justify-between mt-[16px]">
+                    <div class="flex items-center">
+                      <img
+                        class="mr-[8px]"
+                        src="./src/images/courses/teacher-1.svg"
+                        alt="Course Teacher"
+                      />
+                      <p class="text-ac-gray-12 font-CentraNo2Light">
+                        Jane Cooper
+                      </p>
+                    </div>
+                    <p class="text-[20px]">4.500.000đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card offline-course-tag scale-down-center"
+              course="nodejs"
+              course-type="backend"
+            >
+              <img
+                class="w-full"
+                src="./src/images/courses/nodejs-course.svg"
+                alt="NodeJS Course"
+              />
+              <div
+                class="pt-[40px] pb-[20px] p-[20px] lg:p-[40px] bg-ac-gray-1"
+              >
+                <div>
+                  <p class="uppercase text-ac-gray-12 font-CentraNo2Light">
+                    Backend
+                  </p>
+                  <a class="mt-[4px] text-2xl" href="/course-detail.html"
+                    >NodeJS</a
+                  >
+                  <div class="flex items-center justify-between mt-[16px]">
+                    <div class="flex items-center">
+                      <img
+                        class="mr-[8px]"
+                        src="./src/images/courses/teacher-1.svg"
+                        alt="Course Teacher"
+                      />
+                      <p class="text-ac-gray-12 font-CentraNo2Light">
+                        Jane Cooper
+                      </p>
+                    </div>
+                    <p class="text-[20px]">4.500.000đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="card offline-course-tag scale-down-center"
+              course="flutter"
+              course-type="mobile"
+            >
+              <img
+                class="w-full"
+                src="./src/images/courses/flutter-course.svg"
+                alt="Flutter Course"
+              />
+              <div
+                class="pt-[40px] pb-[20px] p-[20px] lg:p-[40px] bg-ac-gray-1"
+              >
+                <div>
+                  <p class="uppercase text-ac-gray-12 font-CentraNo2Light">
+                    Mobile
+                  </p>
+                  <a class="mt-[4px] text-2xl" href="/course-detail.html"
+                    >Flutter</a
+                  >
+
+                  <div class="flex items-center justify-between mt-[16px]">
+                    <div class="flex items-center">
+                      <img
+                        class="mr-[8px]"
+                        src="./src/images/courses/teacher-1.svg"
+                        alt="Course Teacher"
+                      />
+                      <p class="text-ac-gray-12 font-CentraNo2Light">
+                        Jane Cooper
+                      </p>
+                    </div>
+                    <p class="text-[20px]">4.500.000đ</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          class="hidden lg:block absolute z-0 top-0 left-[-400px] opacity-30 w-[750px]"
+          src="./src/images/index/appscyclone-is-a-team/graphic-1.svg"
+          alt="Graphic"
+        />
+      </section>
+    </section>
+    <!-- Enf of Content -->
+
+    <!-- Start of Footer -->
+    <footer class="container h-[534px] mx-auto bg-white px-[20px]">
+      <div
+        class="flex flex-col items-center lg:flex-row lg:justify-between pt-[96px] pb-[32px]"
+      >
+        <div class="flex flex-col gap-[156px]">
+          <div class="flex flex-col gap-[32px] items-center lg:items-start">
+            <div>
+              <a href="/index.html">
+                <img
+                  class="w-[178px]"
+                  src="./src/images/AC-Logo.svg"
+                  alt="Apps Cyclone Logo"
+                />
+              </a>
+            </div>
+            <h4 class="text-3xl text-center lg:text-left">
+              Wanna learn with us?<br />Get in touch
+            </h4>
+            <a
+              class="flex items-center justify-center w-[200px] h-[56px] px-[24px] py-[12px] rounded-full text-white bg-ac-primary-text transition-colors ease-in-out duration-300 hover:bg-ac-primary-1"
+              type="button"
+              href="/register.html"
+            >
+              Registered
+            </a>
+          </div>
+          <p
+            class="hidden lg:block text-center lg:text-left text-ac-secondary-text font-CentraNo2Light"
+          >
+            Copyright © 2023. All rights reserved.
+          </p>
+        </div>
+        <div class="flex flex-col lg:flex-row gap-[40px] mt-[40px]">
+          <div class="w-[251px]">
+            <p class="text-[18px] text-center lg:text-left">Navigation</p>
+            <ul
+              class="flex flex-col gap-[16px] mt-[16px] text-center lg:text-left"
+            >
+              <li>
+                <a
+                  class="text-ac-secondary-text mt-[16px] font-CentraNo2Book"
+                  href="#"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  class="text-ac-secondary-text mt-[16px] font-CentraNo2Book"
+                  href="/courses.html"
+                  >Course</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-[251px]">
+            <p class="text-[18px] text-center lg:text-left">Head Office</p>
+            <p
+              class="text-ac-secondary-text mt-[16px] font-CentraNo2Book text-center lg:text-left"
+            >
+              168/6 Bui Thi Xuan Street,<br />Ward 3, Tan Binh District,<br />Ho
+              Chi Minh City, Vietnam
+            </p>
+            <ul
+              class="flex justify-center lg:justify-start gap-[28px] mt-[22px]"
+            >
+              <li>
+                <a href="#"
+                  ><svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_1893)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M26.1 12.4668C26.1 20.8668 21.3 26.8668 12.9 26.8668C8.1 26.8668 6.176 24.3615 4.5 22.0668M4.5 22.0668C4.53867 22.0601 8.1 20.8668 8.1 20.8668C4.092 16.8148 3.788 10.8135 6.9 6.4668C8.376 9.21213 11.132 11.7455 14.1 12.4668C14.2147 9.00013 16.5653 6.4668 20.1 6.4668C22.5067 6.4668 23.9227 7.38413 24.9 8.8668H28.5L26.1 12.4668"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_1893">
+                        <rect
+                          width="32"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_1894)">
+                      <path
+                        d="M24.772 7.68245C23.6948 6.59891 22.4134 5.73979 21.002 5.1548C19.5906 4.56982 18.0772 4.2706 16.5493 4.27445C10.14 4.27445 4.92532 9.48645 4.92398 15.8931C4.9213 17.9322 5.45616 19.936 6.47465 21.7025L4.82532 27.7238L10.988 26.1078C12.6928 27.0359 14.6029 27.5222 16.544 27.5225H16.5493C22.956 27.5225 28.1707 22.3091 28.1733 15.9025C28.1779 14.3755 27.8797 12.8628 27.2958 11.4518C26.712 10.0409 25.8542 8.75971 24.772 7.68245Z"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M17.96 18.0799L18.5014 17.5425C18.9987 17.0492 19.7854 16.9865 20.3587 17.3892C20.9134 17.7785 21.4147 18.1279 21.8814 18.4532C22.6227 18.9679 22.712 20.0239 22.0734 20.6612L21.5947 21.1399"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M11.36 10.9053L11.8387 10.4267C11.9878 10.2768 12.1679 10.1615 12.3665 10.0889C12.565 10.0162 12.777 9.98809 12.9876 10.0064C13.1982 10.0247 13.4022 10.089 13.5852 10.1948C13.7682 10.3006 13.9258 10.4453 14.0467 10.6187C14.3707 11.0853 14.72 11.5867 15.1107 12.1413C15.3069 12.4198 15.399 12.7583 15.3709 13.0978C15.3429 13.4373 15.1965 13.7561 14.9574 13.9987L14.42 14.54"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21.5947 21.1398C19.62 23.1051 16.3013 21.4358 13.6813 18.8145"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.684 18.8186C11.064 16.1973 9.39469 12.8799 11.36 10.9053"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M14.42 14.54C14.8766 15.2459 15.4086 15.9 16.0067 16.4907L16.0094 16.4934C16.6254 17.1094 17.2894 17.6547 17.96 18.08"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_1894">
+                        <rect
+                          width="32"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  ><svg
+                    width="33"
+                    height="32"
+                    viewBox="0 0 33 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#clip0_1_1895)">
+                      <path
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        d="M10.5 4H22.5053C23.2926 4 24.0721 4.15506 24.7994 4.45632C25.5267 4.75758 26.1875 5.19914 26.7442 5.7558C27.3009 6.31245 27.7424 6.9733 28.0437 7.70061C28.3449 8.42791 28.5 9.20744 28.5 9.99467V22.0067C28.4996 23.5963 27.8679 25.1207 26.7437 26.2447C25.6196 27.3686 24.095 28 22.5053 28H10.4947C8.90478 28 7.38002 27.3684 6.2558 26.2442C5.13158 25.12 4.5 23.5952 4.5 22.0053V10C4.5 8.4087 5.13214 6.88258 6.25736 5.75736C7.38258 4.63214 8.9087 4 10.5 4Z"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M15.3 17.2002H22.5"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M22.5 11.2002H21.24C20.3011 11.2002 19.4007 11.5732 18.7368 12.237C18.0729 12.9009 17.7 13.8013 17.7 14.7402V28.0002"
+                        stroke="#212121"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="clip0_1_1895">
+                        <rect
+                          width="32"
+                          height="32"
+                          fill="white"
+                          transform="translate(0.5)"
+                        />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p
+          class="lg:hidden mt-[40px] text-ac-secondary-text font-CentraNo2Light"
+        >
+          Copyright © 2023. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+  </body>
+</html>
