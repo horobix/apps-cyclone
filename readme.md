@@ -1,7 +1,7 @@
 # Apps Cyclone Landing Page
 
 Use Live Server or Serve to start the project.
-Live preview here: https://trith13102.dev/acs
+Live preview here: https://trith13102.dev
 
 Install all packages:
 
